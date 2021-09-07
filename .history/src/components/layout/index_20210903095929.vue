@@ -1,0 +1,26 @@
+<template>
+   <div class="nav">
+      <el-container style="height: 100%">
+        <router-view></router-view>
+      </el-container>
+    </div>
+</template>
+
+<script>
+export default {
+  name:"Layout"
+}
+</script>
+
+<style lang="scss" scoped>
+.nav {
+  position: absolute;
+    width: calc(100% - .2rem);
+    height: calc(100% - .2rem);
+    background: url("~@/assets/img/backgroundMoHu.png") no-repeat;
+    background-size: cover;
+    padding: 0.05rem 0.1rem 0.03rem;
+    margin: 0.1rem 0.08rem 0.08rem;
+    box-sizing: border-box;
+  }
+</style>

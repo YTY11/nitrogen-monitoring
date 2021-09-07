@@ -1,0 +1,24 @@
+<template>
+  <div class="n2-header">
+    <div class="header-left">
+      <slot name="header-left"></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+import HeaderLeft from './'
+export default {
+  name: "N2Header",
+};
+</script>
+
+<style lang="scss" scoped>
+.n2-header {
+  margin-bottom: 0.05rem;
+  display: flex;
+  .header-right {
+    margin-left: auto;
+  }
+}
+</style>
