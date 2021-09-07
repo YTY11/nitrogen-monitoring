@@ -1,0 +1,47 @@
+<template>
+  <div class="n2-error">
+    <Select/>
+    <div class="content-middle">
+      <Analysis/>
+    </div>
+    
+  </div>
+</template>
+
+<script>
+//选择组件
+import Select from "@/components/n2Error/select"
+// 报警进度分析 
+import Analysis from "@/components/n2Error/analysis"
+export default {
+  name: "N2Error",
+  components:{
+    Select,
+    Analysis
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.n2-error {
+  position: absolute;
+  width: 7.2rem;
+  height: 9rem;
+  margin-left: 0.24rem;
+  margin-top: 0.32rem;
+  border-radius: 0.16rem;
+  overflow: hidden;
+  background: #e6e6e6;
+  .{
+     width 7.12rem
+      height 2.82rem
+      box-sizing border-box
+      margin-left 0.04rem
+      margin-top 0.03rem
+      background #FFFFFF
+      box-shadow 0 2px 2px 0 rgba(0, 0, 0, 0.50)
+      border-radius 0 0 16px 16px
+      overflow hidden
+  }
+}
+</style>

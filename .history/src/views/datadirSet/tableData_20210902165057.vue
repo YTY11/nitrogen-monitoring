@@ -1,0 +1,15 @@
+<template>
+  <div class="table-data">
+
+  </div>
+</template>
+
+<script>
+export default {
+  name:"tableData"
+}
+</script>
+
+<style>
+
+</style>

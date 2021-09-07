@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel="icon" href="favicon.ico"><title>nitrogen-monitoring</title><script>var oWidth =
+            window.innerWidth ||
+            document.documentElement.clientWidth ||
+            document.body.clientWidth;
+        if(oWidth <= 700){
+            oWidth = 375
+        }
+        else{
+            oWidth = 768
+        }
+        window.onload = function(){
+            /*375代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;
+            100代表换算比例，这里写100是为了以后好算,
+            比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+
+            getRem(oWidth,100)
+        };
+        window.onresize = function(){
+
+            getRem(oWidth,100)
+        };
+        function getRem(pwidth,prem){
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth/pwidth*prem + "px";
+        }</script><link href="static/css/chunk-0f3f5b92.462c9e79.css" rel="prefetch"><link href="static/css/chunk-35297a23.7a036121.css" rel="prefetch"><link href="static/css/chunk-3a9ba255.a32c8f6e.css" rel="prefetch"><link href="static/css/chunk-79139747.0c98e9fa.css" rel="prefetch"><link href="static/css/chunk-c45143c6.2efc3b47.css" rel="prefetch"><link href="static/js/chunk-0f3f5b92.2270feb4.js" rel="prefetch"><link href="static/js/chunk-19752f53.04aee3c4.js" rel="prefetch"><link href="static/js/chunk-35297a23.56de79ca.js" rel="prefetch"><link href="static/js/chunk-3a9ba255.a5d53b14.js" rel="prefetch"><link href="static/js/chunk-79139747.47a682e6.js" rel="prefetch"><link href="static/js/chunk-c45143c6.589e963f.js" rel="prefetch"><link href="static/css/app.17a8a053.css" rel="preload" as="style"><link href="static/css/chunk-vendors.504c67bd.css" rel="preload" as="style"><link href="static/js/app.ee24cb26.js" rel="preload" as="script"><link href="static/js/chunk-vendors.d94ec69a.js" rel="preload" as="script"><link href="static/css/chunk-vendors.504c67bd.css" rel="stylesheet"><link href="static/css/app.17a8a053.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but nitrogen-monitoring doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="static/js/chunk-vendors.d94ec69a.js"></script><script src="static/js/app.ee24cb26.js"></script></body></html>
